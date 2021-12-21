@@ -34,9 +34,9 @@ elif os.getenv('NAMU_DB') or os.getenv('NAMU_DB_TYPE'):
         set_data['db'] = 'data'
 
     if os.getenv('NAMU_DB_TYPE'):
-        set_data['db'] = os.getenv('NAMU_DB_TYPE')
+        set_data['db_type'] = os.getenv('NAMU_DB_TYPE')
     else:
-        set_data['db'] = 'sqlite'
+        set_data['db_type'] = 'sqlite'
 
     print('DB name : ' + set_data['db'])
     print('DB type : ' + set_data['db_type'])
